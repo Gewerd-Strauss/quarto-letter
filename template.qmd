@@ -21,6 +21,7 @@ recipient:
 # ------------------------------------------------  
 date: 2022-12-24
 filenumber: "22-A-01"
+filenumber-name: Aktenzeichen
 #signature: my-signature.png # bring your own file 
 #signature: ""               # no signature
 #logo: my-logo.png           # bring your own file 

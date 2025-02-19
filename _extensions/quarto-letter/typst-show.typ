@@ -35,6 +35,7 @@
     sendemail: "$sender.email$",
     sendwww: "$sender.www$",
     aktenzeichen: "$filenumber$",
+    aktenzeichenname: "$filenumber-name$",
     betreff: "$subject$",
     subjectword: "$subjectword$",
     opening: "$opening$",
