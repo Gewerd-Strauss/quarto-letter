@@ -32,6 +32,7 @@
     sendemail: none,
     sendwww: none,
     aktenzeichen: none,
+    aktenzeichenname: none,
     betreff: none,
     subjectword: none,
     opening: none,
@@ -146,7 +147,7 @@
                            #text(8pt)[#sendwww]
                            #linebreak()
                            #if aktenzeichen != "" [
-                              #text(8pt)[Aktenzeichen: #aktenzeichen]
+                              #text(8pt)[#aktenzeichenname: #aktenzeichen]
                            ]
                            #v(-3mm)
                            #text(8pt)[Datum: #datum]
