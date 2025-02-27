@@ -143,11 +143,17 @@
                            #v(-4mm)
                            #text(8pt)[#sendplz] #text(8pt)[#sendort]
                            #v(-1mm)
-                           #text(8pt)[Telefon: #sendtelefon]
+                           #if sendtelefon != "" [
+                            #text(8pt)[Telefon: #sendtelefon]
+                           ]
                            #v(-2mm)
-                           #text(8pt)[#sendemail]
+                           #if sendemail != "" [
+                            #text(8pt)[#sendemail]
+                           ]
                            #v(-3mm)
-                           #text(8pt)[#sendwww]
+                           #if sendwww != "" [
+                            #text(8pt)[#sendwww]
+                           ]
                            #linebreak()
                            #if aktenzeichen != "" [
                               #text(8pt)[#aktenzeichenname: #aktenzeichen]
