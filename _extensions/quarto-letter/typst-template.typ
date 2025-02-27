@@ -201,10 +201,18 @@
   v(5mm)
 
   if anlagen != none [
-    #text(11pt)[Anlage(n):
+    #if type(anlagen) == str [  // a single attachment
+      #text(11pt)[Anlage:
+      - #anlagen
+      ]
+    ] else if type(anlagen) == array [                      // multiple attachments. also handles empty entries in the list.
+      #text(11pt)[Anlagen(n):
         #for a in anlagen [
-          - #a
+          #if a != "" [
+            - #a
+          ]
         ]
+      ]
     ]
   ]
 }
